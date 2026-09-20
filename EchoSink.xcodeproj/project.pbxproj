@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A42BF5AFA9E4BC8BEB8E919 /* EchoSinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DC1C908E045828533D2B4 /* EchoSinkApp.swift */; };
+		015777D8C277446586BD109E /* SinkingParticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A3C3AF7E5A48D9BB44C376 /* SinkingParticlesView.swift */; };
 		0B9C051AF62940A291556A5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA747A530CE2465C86C8086D /* ContentView.swift */; };
-		50CA9C2C36294854A016D587 /* DraftEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089F58101D91430D9EB3685E /* DraftEditorView.swift */; };
-		7BDFD4B3670C4091BA00E9E5 /* CoolingReservoirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EEED876154D0A88981BD5 /* CoolingReservoirView.swift */; };
-		5057BCB91F3E46D697AAB85D /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B11BE61AF642F19FD85358 /* HapticManager.swift */; };
-		5E61F476762E459FBAEE1770 /* Draft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9531C86F05C2470BB785D5DF /* Draft.swift */; };
 		1F8A3999791D45E2BEB07EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB62AF50EDB4A6BA58A16C5 /* Assets.xcassets */; };
+		4A42BF5AFA9E4BC8BEB8E919 /* EchoSinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DC1C908E045828533D2B4 /* EchoSinkApp.swift */; };
+		5057BCB91F3E46D697AAB85D /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B11BE61AF642F19FD85358 /* HapticManager.swift */; };
+		50CA9C2C36294854A016D587 /* DraftEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089F58101D91430D9EB3685E /* DraftEditorView.swift */; };
+		5E61F476762E459FBAEE1770 /* Draft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9531C86F05C2470BB785D5DF /* Draft.swift */; };
+		66ED0C979D0544729A9A2CA5 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9A1E4FA524F83886A7EDB /* NotificationManager.swift */; };
+		7BDFD4B3670C4091BA00E9E5 /* CoolingReservoirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EEED876154D0A88981BD5 /* CoolingReservoirView.swift */; };
 		CF76BEE535904A8DBD0373D8 /* LiquidProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D720EA2475B4BF29FBA528B /* LiquidProgressView.swift */; };
 		F30F680805664B418BD80639 /* SinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF961750395474A8A8EEDD7 /* SinkButtonStyle.swift */; };
-		015777D8C277446586BD109E /* SinkingParticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A3C3AF7E5A48D9BB44C376 /* SinkingParticlesView.swift */; };
-		66ED0C979D0544729A9A2CA5 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9A1E4FA524F83886A7EDB /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CF3DC1C908E045828533D2B4 /* EchoSinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoSinkApp.swift; sourceTree = "<group>"; };
-		DA747A530CE2465C86C8086D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		089F58101D91430D9EB3685E /* DraftEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftEditorView.swift; sourceTree = "<group>"; };
-		8E8EEED876154D0A88981BD5 /* CoolingReservoirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolingReservoirView.swift; sourceTree = "<group>"; };
 		06B11BE61AF642F19FD85358 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
-		9531C86F05C2470BB785D5DF /* Draft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draft.swift; sourceTree = "<group>"; };
-		8CB62AF50EDB4A6BA58A16C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		089F58101D91430D9EB3685E /* DraftEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftEditorView.swift; sourceTree = "<group>"; };
 		1AA221688DEE48BDBFF853EA /* EchoSink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EchoSink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D720EA2475B4BF29FBA528B /* LiquidProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidProgressView.swift; sourceTree = "<group>"; };
 		3AF961750395474A8A8EEDD7 /* SinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinkButtonStyle.swift; sourceTree = "<group>"; };
+		8CB62AF50EDB4A6BA58A16C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E8EEED876154D0A88981BD5 /* CoolingReservoirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolingReservoirView.swift; sourceTree = "<group>"; };
 		91A3C3AF7E5A48D9BB44C376 /* SinkingParticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinkingParticlesView.swift; sourceTree = "<group>"; };
+		9531C86F05C2470BB785D5DF /* Draft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draft.swift; sourceTree = "<group>"; };
 		B1A9A1E4FA524F83886A7EDB /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		CF3DC1C908E045828533D2B4 /* EchoSinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoSinkApp.swift; sourceTree = "<group>"; };
+		DA747A530CE2465C86C8086D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,22 +46,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6E14ADBAE81E45268C02E07D = {
-			isa = PBXGroup;
-			children = (
-				5E54654FB1704B12B923B1E6 /* EchoSink */,
-				DCEAF3000B8F4C209455AD6C /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		DCEAF3000B8F4C209455AD6C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1AA221688DEE48BDBFF853EA /* EchoSink.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		5E54654FB1704B12B923B1E6 /* EchoSink */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +62,22 @@
 				8CB62AF50EDB4A6BA58A16C5 /* Assets.xcassets */,
 			);
 			path = EchoSink;
+			sourceTree = "<group>";
+		};
+		6E14ADBAE81E45268C02E07D = {
+			isa = PBXGroup;
+			children = (
+				5E54654FB1704B12B923B1E6 /* EchoSink */,
+				DCEAF3000B8F4C209455AD6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCEAF3000B8F4C209455AD6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA221688DEE48BDBFF853EA /* EchoSink.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +228,70 @@
 			};
 			name = Debug;
 		};
+		944FFC1EADA94947A35A9124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4F53735QD2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.echosinkapp.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B3015AFF01D54BAFAAC880AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4F53735QD2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.echosinkapp.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		FB14EC15B7AF41298A6054DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -284,79 +348,23 @@
 			};
 			name = Release;
 		};
-		944FFC1EADA94947A35A9124 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.echosinkapp.ios;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		B3015AFF01D54BAFAAC880AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.echosinkapp.ios;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F43CDB8BDB9A42E59531B105 /* Build configuration list for PBXProject "EchoSink" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6311B7A8EC6A4EF3BD65C1CC /* Debug */,
-				FB14EC15B7AF41298A6054DD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		700F058BC3134481B530D61D /* Build configuration list for PBXNativeTarget "EchoSink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				944FFC1EADA94947A35A9124 /* Debug */,
 				B3015AFF01D54BAFAAC880AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F43CDB8BDB9A42E59531B105 /* Build configuration list for PBXProject "EchoSink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6311B7A8EC6A4EF3BD65C1CC /* Debug */,
+				FB14EC15B7AF41298A6054DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
