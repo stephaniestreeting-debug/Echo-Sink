@@ -43,6 +43,7 @@ private struct DraftCard: View {
     let draft: Draft
     let onDelete: () -> Void
     @State private var showSinkAnimation = false
+    @State private var showCopiedConfirmation = false
 
     var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { context in
@@ -77,11 +78,15 @@ private struct DraftCard: View {
                         Button {
                             copyToClipboard()
                         } label: {
-                            Label("Copy", systemImage: "doc.on.doc")
-                                .font(.subheadline)
+                            Label(
+                                showCopiedConfirmation ? "Copied!" : "Copy",
+                                systemImage: showCopiedConfirmation ? "checkmark" : "doc.on.doc"
+                            )
+                            .font(.subheadline)
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(Color("AccentSink"))
+                        .tint(showCopiedConfirmation ? .green : Color("AccentSink"))
+                        .animation(.easeInOut(duration: 0.2), value: showCopiedConfirmation)
                     }
 
                     Button(role: .destructive, action: onDelete) {
@@ -119,6 +124,12 @@ private struct DraftCard: View {
     private func copyToClipboard() {
         UIPasteboard.general.string = draft.text
         HapticManager.success()
+        showCopiedConfirmation = true
+
+        Task {
+            try? await Task.sleep(for: .seconds(1.5))
+            showCopiedConfirmation = false
+        }
     }
 
     private func timeRemainingLabel(until date: Date, from now: Date) -> String {
