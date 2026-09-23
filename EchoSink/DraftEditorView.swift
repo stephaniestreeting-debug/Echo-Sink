@@ -1,7 +1,7 @@
 import SwiftUI
 import SwiftData
 
-private enum CoolingPreset: String, CaseIterable, Identifiable {
+enum CoolingPreset: String, CaseIterable, Identifiable {
     case fifteenMinutes = "15m"
     case oneHour = "1h"
     case fourHours = "4h"
@@ -22,9 +22,11 @@ private enum CoolingPreset: String, CaseIterable, Identifiable {
 struct DraftEditorView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var draftText: String = ""
+    @State private var draftLabel: String = ""
     @State private var preset: CoolingPreset = .oneHour
     @State private var didSink = false
     @State private var isSinking = false
+    @State private var showSunkConfirmation = false
     @FocusState private var isEditorFocused: Bool
 
     var body: some View {
@@ -72,6 +74,10 @@ struct DraftEditorView: View {
                 .blur(radius: isSinking ? 6 : 0)
 
                 VStack(spacing: 16) {
+                    TextField("Label it (optional) — e.g. \"Work email\"", text: $draftLabel)
+                        .font(.system(.subheadline, design: .serif))
+                        .padding(.horizontal, 20)
+
                     Picker("Cooling period", selection: $preset) {
                         ForEach(CoolingPreset.allCases) { option in
                             Text(option.rawValue).tag(option)
@@ -90,6 +96,18 @@ struct DraftEditorView: View {
             }
             .background(Color("BackgroundPrimary").ignoresSafeArea())
             .toolbar(.hidden)
+            .overlay(alignment: .top) {
+                if showSunkConfirmation {
+                    Text("Sunk — cooling for \(preset.rawValue)")
+                        .font(.system(.subheadline, design: .serif))
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 10)
+                        .background(Capsule().fill(Color("AccentSink")))
+                        .foregroundStyle(Color("BackgroundPrimary"))
+                        .padding(.top, 60)
+                        .transition(.move(edge: .top).combined(with: .opacity))
+                }
+            }
         }
     }
 
@@ -97,7 +115,11 @@ struct DraftEditorView: View {
         let trimmed = draftText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else { return }
 
-        let draft = Draft(text: draftText, duration: preset.duration)
+        let draft = Draft(
+            text: draftText,
+            label: draftLabel.trimmingCharacters(in: .whitespacesAndNewlines),
+            duration: preset.duration
+        )
         modelContext.insert(draft)
         NotificationManager.scheduleUnlockNotification(for: draft)
 
@@ -107,12 +129,21 @@ struct DraftEditorView: View {
 
         withAnimation(.easeIn(duration: 0.45)) {
             isSinking = true
+            showSunkConfirmation = true
         }
 
         Task {
             try? await Task.sleep(for: .milliseconds(460))
             draftText = ""
+            draftLabel = ""
             isSinking = false
+        }
+
+        Task {
+            try? await Task.sleep(for: .seconds(2.2))
+            withAnimation {
+                showSunkConfirmation = false
+            }
         }
     }
 }

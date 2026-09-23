@@ -44,12 +44,20 @@ private struct DraftCard: View {
     let onDelete: () -> Void
     @State private var showSinkAnimation = false
     @State private var showCopiedConfirmation = false
+    @State private var isEditing = false
 
     var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { context in
             let unlocked = draft.unlockAt <= context.date
 
             VStack(alignment: .leading, spacing: 12) {
+                if !draft.label.isEmpty {
+                    Text(draft.label)
+                        .font(.system(.caption, design: .serif))
+                        .tracking(1)
+                        .foregroundStyle(Color("AccentSink"))
+                }
+
                 if unlocked {
                     Text(draft.text)
                         .font(.system(.body, design: .serif))
@@ -87,6 +95,13 @@ private struct DraftCard: View {
                         .buttonStyle(.borderedProminent)
                         .tint(showCopiedConfirmation ? .green : Color("AccentSink"))
                         .animation(.easeInOut(duration: 0.2), value: showCopiedConfirmation)
+
+                        Button {
+                            isEditing = true
+                        } label: {
+                            Image(systemName: "pencil")
+                                .foregroundStyle(.secondary)
+                        }
                     }
 
                     Button(role: .destructive, action: onDelete) {
@@ -117,6 +132,15 @@ private struct DraftCard: View {
                 guard !draft.hasPlayedSinkAnimation else { return }
                 draft.hasPlayedSinkAnimation = true
                 showSinkAnimation = true
+            }
+            .sheet(isPresented: $isEditing) {
+                EditDraftSheet(draft: draft) {
+                    showSinkAnimation = false
+                    Task {
+                        try? await Task.sleep(for: .milliseconds(150))
+                        showSinkAnimation = true
+                    }
+                }
             }
         }
     }

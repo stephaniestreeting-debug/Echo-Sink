@@ -15,6 +15,7 @@
 		50CA9C2C36294854A016D587 /* DraftEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089F58101D91430D9EB3685E /* DraftEditorView.swift */; };
 		5E61F476762E459FBAEE1770 /* Draft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9531C86F05C2470BB785D5DF /* Draft.swift */; };
 		66ED0C979D0544729A9A2CA5 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9A1E4FA524F83886A7EDB /* NotificationManager.swift */; };
+		A3B7B3CA49984B21BE68B301 /* EditDraftSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DF7563E8D4D7E9A94F239 /* EditDraftSheet.swift */; };
 		7BDFD4B3670C4091BA00E9E5 /* CoolingReservoirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EEED876154D0A88981BD5 /* CoolingReservoirView.swift */; };
 		CF76BEE535904A8DBD0373D8 /* LiquidProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D720EA2475B4BF29FBA528B /* LiquidProgressView.swift */; };
 		F30F680805664B418BD80639 /* SinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF961750395474A8A8EEDD7 /* SinkButtonStyle.swift */; };
@@ -31,6 +32,7 @@
 		91A3C3AF7E5A48D9BB44C376 /* SinkingParticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinkingParticlesView.swift; sourceTree = "<group>"; };
 		9531C86F05C2470BB785D5DF /* Draft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draft.swift; sourceTree = "<group>"; };
 		B1A9A1E4FA524F83886A7EDB /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		C07DF7563E8D4D7E9A94F239 /* EditDraftSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDraftSheet.swift; sourceTree = "<group>"; };
 		CF3DC1C908E045828533D2B4 /* EchoSinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoSinkApp.swift; sourceTree = "<group>"; };
 		DA747A530CE2465C86C8086D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +61,7 @@
 				3AF961750395474A8A8EEDD7 /* SinkButtonStyle.swift */,
 				91A3C3AF7E5A48D9BB44C376 /* SinkingParticlesView.swift */,
 				B1A9A1E4FA524F83886A7EDB /* NotificationManager.swift */,
+				C07DF7563E8D4D7E9A94F239 /* EditDraftSheet.swift */,
 				8CB62AF50EDB4A6BA58A16C5 /* Assets.xcassets */,
 			);
 			path = EchoSink;
@@ -159,6 +162,7 @@
 				F30F680805664B418BD80639 /* SinkButtonStyle.swift in Sources */,
 				015777D8C277446586BD109E /* SinkingParticlesView.swift in Sources */,
 				66ED0C979D0544729A9A2CA5 /* NotificationManager.swift in Sources */,
+				A3B7B3CA49984B21BE68B301 /* EditDraftSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
