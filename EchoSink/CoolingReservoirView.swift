@@ -67,6 +67,7 @@ private struct DraftCard: View {
                         .font(.system(.body, design: .serif))
                         .blur(radius: 9)
                         .redacted(reason: .placeholder)
+                        .accessibilityLabel("Cooling. Not ready to read yet.")
                 }
 
                 LiquidProgressView(progress: draft.progress, isReady: unlocked)
@@ -78,7 +79,7 @@ private struct DraftCard: View {
                     )
                     .font(.caption)
                     .monospacedDigit()
-                    .foregroundStyle(unlocked ? .green : .secondary)
+                    .foregroundStyle(unlocked ? Color("AccentReady") : .secondary)
 
                     Spacer()
 

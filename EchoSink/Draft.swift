@@ -9,6 +9,7 @@ final class Draft {
     var unlockAt: Date
     var duration: TimeInterval
     var hasPlayedSinkAnimation: Bool = false
+    var stableID: UUID = UUID()
 
     init(text: String, label: String = "", createdAt: Date = .now, duration: TimeInterval) {
         self.text = text

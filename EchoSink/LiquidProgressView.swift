@@ -14,7 +14,7 @@ struct LiquidProgressView: View {
                     .fill(
                         LinearGradient(
                             colors: isReady
-                                ? [.green.opacity(0.85), .green]
+                                ? [Color("AccentReady").opacity(0.85), Color("AccentReady")]
                                 : [Color("AccentSink").opacity(0.7), Color("AccentSink")],
                             startPoint: .leading,
                             endPoint: .trailing

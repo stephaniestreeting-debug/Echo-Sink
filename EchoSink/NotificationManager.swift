@@ -38,6 +38,6 @@ enum NotificationManager {
     }
 
     private static func identifier(for draft: Draft) -> String {
-        "\(draft.persistentModelID)"
+        draft.stableID.uuidString
     }
 }
